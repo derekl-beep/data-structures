@@ -1,7 +1,7 @@
 
 # data-structures
 
-This repository stores my review and implementations of data structures, including:
+This repository stores my revision and implementations of data structures, including:
 
 - Linked List
 	- Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/LinkedList.java), [Python](https://github.com/derekl-beep/data-structures/blob/master/linked_list.py)
