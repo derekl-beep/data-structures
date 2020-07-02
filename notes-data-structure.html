@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Java</title>
+  <link rel="stylesheet" href="https://stackedit.io/style.css" />
+</head>
+
+<body class="stackedit">
+  <div class="stackedit__left">
+    <div class="stackedit__toc">
+      
+<ul>
+<li><a href="#java-project-structure">Java Project Structure</a></li>
+<li><a href="#data-structures">Data Structures</a>
+<ul>
+<li><a href="#linked-list">Linked List</a></li>
+<li><a href="#hash-tables">Hash Tables</a></li>
+</ul>
+</li>
+</ul>
+
+    </div>
+  </div>
+  <div class="stackedit__right">
+    <div class="stackedit__html">
+      <h1 id="java-project-structure">Java Project Structure</h1>
+<p>Project folder<br>
+<code>src</code>: source file folder<br>
+<code>com.xxxx</code>: package folder<br>
+<code>Main.java</code>: main file</p>
+<h1 id="data-structures">Data Structures</h1>
+<h2 id="linked-list">Linked List</h2>
+<h3 id="properties">Properties</h3>
+<p>A linked list</p>
+<ul>
+<li>consists of a group of nodes in sequence</li>
+<li>grows and shrinks dynamically</li>
+<li>is made up of two parts: data and reference to the next node</li>
+</ul>
+<p><code>Head</code>: first node<br>
+<code>Tail</code>: last node</p>
+<h3 id="time-complexity">Time Complexity</h3>
+<p>LOOK UP</p>
+<ul>
+<li>By value: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span></li>
+<li>By index: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span></li>
+</ul>
+<p>INSERTION</p>
+<ul>
+<li>At the beginning: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> with a head pointer</li>
+<li>At the end:
+<ul>
+<li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> with a tail pointer</li>
+<li><span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span> without a tail pointer</li>
+</ul>
+</li>
+<li>In the middle: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span>, involved a searching step</li>
+</ul>
+<p>DELETION</p>
+<ul>
+<li>From the beginning: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> with a head pointer</li>
+<li>From the end:
+<ul>
+<li>Singly linked list: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span> even with a tail pointer; involved searching of the second last node</li>
+<li>Doubly linked list: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></li>
+</ul>
+</li>
+<li>From the middle: <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span>, involved a searching step</li>
+</ul>
+<h3 id="linked-list-in-java">Linked List in Java</h3>
+<p><code>java.util.LinkedList</code> includes the implementation of <code>LinkedList</code> in java. This implements a doubly linked list.</p>
+<pre class=" language-java"><code class="prism  language-java"><span class="token keyword">package</span> com<span class="token punctuation">.</span>derek<span class="token punctuation">;</span>  
+  
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>Arrays<span class="token punctuation">;</span>  
+<span class="token keyword">import</span> java<span class="token punctuation">.</span>util<span class="token punctuation">.</span>LinkedList<span class="token punctuation">;</span>  
+  
+<span class="token keyword">public</span> <span class="token keyword">class</span> <span class="token class-name">Main</span> <span class="token punctuation">{</span>  
+	<span class="token keyword">public</span> <span class="token keyword">static</span> <span class="token keyword">void</span> <span class="token function">main</span><span class="token punctuation">(</span>String<span class="token punctuation">[</span><span class="token punctuation">]</span> args<span class="token punctuation">)</span> <span class="token punctuation">{</span>  
+		
+		<span class="token comment">// Create a linked list object using the java util  </span>
+		LinkedList list <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">LinkedList</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		
+		<span class="token comment">// Add nodes to the end of the list  </span>
+		list<span class="token punctuation">.</span><span class="token function">addLast</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		list<span class="token punctuation">.</span><span class="token function">addLast</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		list<span class="token punctuation">.</span><span class="token function">addLast</span><span class="token punctuation">(</span><span class="token number">30</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+
+		System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">)</span><span class="token punctuation">;</span>  
+
+		<span class="token comment">// Look up by value  </span>
+		System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">.</span><span class="token function">contains</span><span class="token punctuation">(</span><span class="token number">10</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">.</span><span class="token function">indexOf</span><span class="token punctuation">(</span><span class="token number">20</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+
+		System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>list<span class="token punctuation">.</span><span class="token function">size</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+
+		<span class="token comment">// Cast to an array structure  </span>
+		var array <span class="token operator">=</span> list<span class="token punctuation">.</span><span class="token function">toArray</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+		System<span class="token punctuation">.</span>out<span class="token punctuation">.</span><span class="token function">println</span><span class="token punctuation">(</span>Arrays<span class="token punctuation">.</span><span class="token function">toString</span><span class="token punctuation">(</span>array<span class="token punctuation">)</span><span class="token punctuation">)</span><span class="token punctuation">;</span>  
+	<span class="token punctuation">}</span>  
+<span class="token punctuation">}</span>
+</code></pre>
+<h3 id="comparison-with-array">Comparison with <code>Array</code></h3>
+<h4 id="space-complexity">Space Complexity</h4>
+<ul>
+<li>Static arrays have a fixed size.</li>
+<li>Dynamic arrays grow by 50% - 100%.</li>
+<li>Linked lists don’t waste memory</li>
+</ul>
+<h4 id="time-complexity-1">Time Complexity</h4>
+<p>// TBC</p>
+<h3 id="types-of-linked-list">Types of Linked List</h3>
+<p>Singly linked list</p>
+<p>Doubly linked list</p>
+<ul>
+<li>Delete from end operation improves to <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span> from <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mi>n</mi><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(n)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord mathdefault">n</span><span class="mclose">)</span></span></span></span></span>, but takes more spaces.</li>
+<li><code>LinkedList()</code> class in Java is an implementation of the doubly linked list.</li>
+</ul>
+<p>Circular linked list</p>
+<ul>
+<li>e.g. music playlists, sign-in form input boxes</li>
+</ul>
+<h3 id="advanced-methods">Advanced Methods</h3>
+<p><code>list.reverse()</code></p>
+<p><code>list.getKthFromTheEnd(int k)</code></p>
+<p><code>list.printMiddle()</code></p>
+<p><code>list.hasLoop()</code></p>
+<h2 id="hash-tables">Hash Tables</h2>
+<h3 id="properties-1">Properties</h3>
+<ul>
+<li>To store key/value pairs</li>
+<li>Insert, remove, lookup run in <span class="katex--inline"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>O</mtext><mo stretchy="false">(</mo><mn>1</mn><mo stretchy="false">)</mo></mrow><annotation encoding="application/x-tex">\text{O}(1)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height: 1em; vertical-align: -0.25em;"></span><span class="mord text"><span class="mord">O</span></span><span class="mopen">(</span><span class="mord">1</span><span class="mclose">)</span></span></span></span></span></li>
+<li>Hash function</li>
+<li>Collision
+<ul>
+<li>Chaining, using <code>LinkedList</code></li>
+<li>Open addressing
+<ul>
+<li>Linear probing, <code>(hash1 + i) % table_size</code></li>
+<li>Quadratic probing, <code>(hash1 + i * i) % table_size</code></li>
+<li>Double hash probing, <code>(hash1 + i * hash2) % table_size</code></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h3 id="implementations-in-java">Implementations in JAVA</h3>
+<pre class=" language-java"><code class="prism  language-java">HashMap<span class="token operator">&lt;</span>Character<span class="token punctuation">,</span> Integer<span class="token operator">&gt;</span> map <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashMap</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<pre class=" language-java"><code class="prism  language-java">HashSet<span class="token operator">&lt;</span>Integer<span class="token operator">&gt;</span> set <span class="token operator">=</span> <span class="token keyword">new</span> <span class="token class-name">HashSet</span><span class="token operator">&lt;</span><span class="token operator">&gt;</span><span class="token punctuation">(</span><span class="token punctuation">)</span><span class="token punctuation">;</span>
+</code></pre>
+<blockquote>
+<p>Written with <a href="https://stackedit.io/">StackEdit</a>.</p>
+</blockquote>
+
+    </div>
+  </div>
+</body>
+
+</html>
