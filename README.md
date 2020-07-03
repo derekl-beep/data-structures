@@ -7,6 +7,8 @@ This repository stores my revision and implementations of data structures, inclu
 	- Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/LinkedList.java), [Python](https://github.com/derekl-beep/data-structures/blob/master/linked_list.py)
 - Hash Table
 	- Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/HashTable.java)
+- Heap
+	- Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/Heap.java)
 - and more!
 
 Notes: https://htmlpreview.github.io/?https://github.com/derekl-beep/data-structures/blob/master/notes-data-structure.html
