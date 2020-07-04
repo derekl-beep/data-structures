@@ -6,17 +6,19 @@ public class Main {
 
     public static void main(String[] args) {
 
-        HashTable map = new HashTable();
+        PriorityQueue priorityQueue = new PriorityQueue();
 
-        map.put(1, "Hello");
-        map.put(11, "World");
-        map.put(1, "Yeah");
+        priorityQueue.enqueue(1);
+        priorityQueue.enqueue(2);
+        priorityQueue.enqueue(4);
+        priorityQueue.enqueue(8);
+        priorityQueue.enqueue(16);
+        priorityQueue.enqueue(32);
 
-        System.out.println(map.get(1));
-        System.out.println(map.get(11));
+        priorityQueue.print();
 
-        map.remove(1);
-        System.out.println(map.get(1));
+        System.out.println(priorityQueue.dequeue());
+        priorityQueue.print();
 
     }
 }

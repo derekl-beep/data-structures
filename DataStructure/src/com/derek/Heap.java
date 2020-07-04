@@ -40,6 +40,10 @@ public class Heap {
         return last_node == size;
     }
 
+    public boolean isEmpty() {
+        return last_node == 0;
+    }
+
     public void remove() {
 
         if (isEmpty())
@@ -54,6 +58,12 @@ public class Heap {
 
         // bubble down the node
         bubbleDown();
+    }
+
+    public int removeAndReturn() {
+        var root = items[0];
+        remove();
+        return root;
     }
 
     private void bubbleUp() {
@@ -91,9 +101,7 @@ public class Heap {
         items[node2] = tmp;
     }
 
-    private boolean isEmpty() {
-        return last_node == 0;
-    }
+
 
     private int parent(int index) {
         return (index - 1) / 2;
@@ -106,5 +114,6 @@ public class Heap {
     private int right(int index) {
         return index * 2 + 2;
     }
+
 
 }
