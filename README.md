@@ -3,6 +3,9 @@
 
 This repository stores my revision and implementations of data structures, including:
 
+- Dynamic Array
+	- Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/Array.java)
+
 - Linked List
 	- Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/LinkedList.java), [Python](https://github.com/derekl-beep/data-structures/blob/master/linked_list.py)
 - Hash Table
