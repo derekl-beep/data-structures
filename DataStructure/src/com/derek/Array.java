@@ -2,6 +2,7 @@ package com.derek;
 
 // Implementation of dynamic array class
 
+import java.util.Arrays;
 import java.util.Enumeration;
 
 public class Array {
@@ -53,8 +54,10 @@ public class Array {
     }
 
     public void print() {
+        var tmp = new int[dataSize];
         for (int i = 0; i < dataSize; i++)
-            System.out.println(array[i]);
+            tmp[i] = array[i];
+        System.out.println(Arrays.toString(tmp));
     }
 
     // Private methods
