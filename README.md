@@ -10,8 +10,6 @@ This repository stores my revision and implementations of data structures, inclu
 - Priority Queue (as Heap) (Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/PriorityQueue.java))
 - and more!
 
-Notes: https://htmlpreview.github.io/?https://github.com/derekl-beep/data-structures/blob/master/notes-data-structure.html
-
 ## Targets
 
 Inspired by the famous [jwasham](https://github.com/jwasham)/**[coding-interview-university](https://github.com/jwasham/coding-interview-university)** GitHub repository, I maintain this repo to keep track of my knowledge on the computer science fundamentals in a systematic manner.
