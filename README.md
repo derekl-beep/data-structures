@@ -8,6 +8,7 @@ This repository stores my revision and implementations of data structures, inclu
 - Hash Table (Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/HashTable.java))
 - Heap (Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/Heap.java))
 - Priority Queue (as Heap) (Source files: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/PriorityQueue.java))
+- Directed Graph (src: [Java](https://github.com/derekl-beep/data-structures/blob/master/DataStructure/src/com/derek/Graph.java))
 - and more!
 
 ## Targets
